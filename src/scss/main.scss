@@ -1,3 +1,4 @@
+@import "game.scss";
 :root {
   background-color: rgb(29, 26, 26);
 }
@@ -9,10 +10,15 @@
   font-size: 62.5%;
 }
 
-.h1 {
+h1 {
   font-size: 5.4rem;
   color: #fff;
   margin-bottom: 5rem;
+}
+
+h2 {
+  font-size: 4.2 rem;
+  margin-bottom: 4rem;
 }
 
 .container {
@@ -54,4 +60,19 @@
   text-align: center;
   margin-bottom: 1rem;
   text-decoration: none;
+  color: rgb(29, 26, 26);
+  background: #654ea3;
 }
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem rgb(73, 71, 71);
+  transition: transform 150ms;
+  transform: scale(1.025);
+}
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transition: none;
+}
+/////Below is the game page scss
